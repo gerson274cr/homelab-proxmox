@@ -1,0 +1,29 @@
+name: Terraform CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  terraform-check:
+    name: "Validar Terraform"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Instalar Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.5.0
+
+      - name: Validar formato de código
+        run: terraform fmt -check
+
+      - name: Inicializar Terraform
+        run: terraform init
+
+      - name: Validar configuración Terraform
+        run: terraform validate
