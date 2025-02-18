@@ -34,7 +34,7 @@ Automatización de la infraestructura de un **Home Lab en Proxmox** utilizando *
 
 1. **Clonar el Repositorio**  
 ```bash
-git clone https://github.com/tuusuario/homelab-proxmox.git
+git clone https://github.com/gerson274cr/homelab-proxmox.git
 cd homelab-proxmox/terraform
 ```
 
@@ -59,17 +59,6 @@ vms = [
     disk_size = "10G"
     network   = "vmbr0"
     template  = "debian-template"
-    node      = "home"
-  },
-  {
-    name      = "db-vm"
-    vmid_start = 2001
-    count     = 2
-    memory    = 4096
-    cores     = 4
-    disk_size = "20G"
-    network   = "vmbr0"
-    template  = "ubuntu-template"
     node      = "home"
   }
 ]
