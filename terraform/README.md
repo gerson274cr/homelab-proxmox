@@ -10,8 +10,7 @@ Automatización de la infraestructura de un **Home Lab en Proxmox** utilizando *
 ✅ **Infraestructura Modular**: Configuración separada en archivos (`provider.tf`, `vms.tf`, `variables.tf`).  
 ✅ **Manejo de Réplicas**: Crea múltiples instancias de una VM fácilmente.  
 ✅ **Configuración con Variables**: Facilita la personalización sin modificar el código.  
-✅ **Tiempo de Espera Optimizado**: Se usa `clone_wait` para evitar fallos en la clonación.  
-✅ **Ejecución Secuencial**: `pm_parallel = 1` para evitar saturar Proxmox.  
+✅ **Tiempo de Espera Optimizado**: Se usa `clone_wait` para evitar fallos en la clonación.   
 
 ---
 
