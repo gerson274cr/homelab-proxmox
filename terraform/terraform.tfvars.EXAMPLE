@@ -1,0 +1,21 @@
+# Credenciales de Proxmox
+proxmox_url          = "proxmox_url"
+proxmox_token_id     = "proxmox_token_id"
+proxmox_token_secret = "proxmox_token_secret"
+pm_tls_insecure      = true # Cambiar a false si se usa SSL válido
+
+# Lista de máquinas virtuales con réplicas
+vms = [
+  {
+    name       = "test-vm"
+    vmid_start = 1001
+    count      = 3
+    memory     = 2048
+    sockets    = 1
+    cores      = 2
+    disk_size  = "10G"
+    network    = "vmbr0"
+    template   = "debian-template"
+    node       = "home"
+  },
+]
