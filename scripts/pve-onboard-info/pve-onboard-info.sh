@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # pve-onboard-info.sh — Inventario/diagnóstico integral para nodos Proxmox
 # Modo: SOLO LECTURA. Crea un paquete .tar.gz con toda la info útil para alta/changes de nodos.
-# Autor: tú+yo :)
+# Autor: @gerson274cr
 
 set -euo pipefail
 shopt -s nullglob
